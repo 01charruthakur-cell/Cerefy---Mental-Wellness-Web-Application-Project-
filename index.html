@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cerefy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <h2>Cerefy</h2>
+
+        <div id="menu">
+
+            <a href="#home">Home</a>
+            <a href="#journal">Journal</a>
+            <a href="#breathing">Breathing</a>
+            <a href="#mood">Mood</a>
+            <a href="#resources">Resources</a>
+            <a href="#contact">Contact us</a>
+
+        </div>
+
+    </div>
+
+    <div id="home" class="hero">
+
+        <h1>Welcome to Cerefy</h1>
+
+        <h2>Your safe space to -</h2>
+
+        <h1>Reflect, Breathe, and Reset.</h1>
+
+        <p>
+            Take the first step toward better mental well-being
+            with Cerefy—track your mood, express your thoughts,
+            and unwind with ease.
+        </p>
+
+        <br>
+
+        <div class="cta-buttons">
+
+            <button id="primaryCTA">
+                Start Your Journey
+            </button>
+
+            <button id="secondaryCTA" class="secondary">
+                Track Mood
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="journal" class="section">
+
+        <h2>Journal</h2>
+
+        <p class="journal-subtext">
+
+            Take a moment to slow down, breathe, and put your thoughts
+            into words. Journaling offers a simple way to reflect,
+            process your emotions, and gain clarity—helping you
+            better understand yourself over time.
+
+        </p>
+
+        <textarea id="journalInput"
+        placeholder="What's on your mind today?"></textarea>
+
+        <br>
+
+        <button onclick="saveJournal()">Save Entry</button>
+
+        <button onclick="clearJournal()">Clear All</button>
+
+        <h3>Your Entries:</h3>
+
+        <ul id="journalList"></ul>
+
+    </div>
+
+    <div id="breathing" class="section">
+
+        <h2>Breathing Exercise</h2>
+
+        <div id="circle"></div>
+
+        <br>
+
+        <p id="breathText">
+
+            Even a minute of mindful breathing can help
+            you feel more centered.
+
+        </p>
+
+        <ul class="breathing-steps">
+
+            <li>Sit comfortably and relax your shoulders.</li>
+
+            <li>Breathe in slowly through your nose.</li>
+
+            <li>Breathe out gently through your mouth.</li>
+
+            <li>
+                Repeat the cycle at your own pace using
+                "Breathe" button below.
+            </li>
+
+        </ul>
+
+        <button onclick="startBreathing()">
+            Breathe
+        </button>
+
+    </div>
+
+    <div id="mood" class="section">
+
+        <h2>Mood Tracker</h2>
+
+        <button onclick="setMood('😊')">😊</button>
+
+        <button onclick="setMood('😐')">😐</button>
+
+        <button onclick="setMood('😢')">😢</button>
+
+        <p id="moodResult"></p>
+
+    </div>
+
+    <div id="resources" class="section">
+
+        <h2>Helpful Resources</h2>
+
+        <p>
+            Learn more about mental health through these
+            trusted and credible sources.
+        </p>
+
+        <div class="resource-box">
+
+            <h3>WHO Mental Health</h3>
+
+            <p>
+                Global information and awareness resources
+                on mental health and well-being.
+            </p>
+
+            <a href="https://www.who.int/health-topics/mental-health"
+            target="_blank">
+
+                Visit →
+
+            </a>
+
+        </div>
+
+        <div class="resource-box">
+
+            <h3>NIMH</h3>
+
+            <p>
+                Research-based insights on mental health
+                conditions, treatments, and support.
+            </p>
+
+            <a href="https://www.nimh.nih.gov"
+            target="_blank">
+
+                Visit →
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div id="contact" class="section">
+
+        <h2>Contact & Support</h2>
+
+        <p>
+            If you have questions or need support,
+            feel free to reach out.
+        </p>
+
+        <p><b>Email:</b> support@cerefy.com</p>
+
+        <p><b>Phone:</b> +91 XXXXX XXXXX</p>
+
+        <br>
+
+        <h3>Need immediate help?</h3>
+
+        <p>
+            If you're feeling overwhelmed,
+            please reach out to a trusted helpline:
+        </p>
+
+        <p>AASRA: +91-9820466726</p>
+
+        <p>Kiran Helpline: 1800-599-0019</p>
+
+    </div>
+
+
+
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
